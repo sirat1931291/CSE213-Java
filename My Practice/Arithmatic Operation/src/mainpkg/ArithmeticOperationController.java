@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
 package mainpkg;
 
 import java.net.URL;
@@ -13,11 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
-/**
- * FXML Controller class
- *
- * @author habib
- */
+
 public class ArithmeticOperationController implements Initializable {
 
     @FXML
@@ -27,28 +19,48 @@ public class ArithmeticOperationController implements Initializable {
     @FXML
     private Label resultLabel;
 
-    /**
-     * Initializes the controller class.
-     */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        
     }    
 
     @FXML
     private void addButtonOnMouseClicked(MouseEvent event) {
+        int xVal = Integer.parseInt(xTextField.getText());
+        int yVal = Integer.parseInt(yTextField.getText());
+        int result = xVal + yVal;
+        resultLabel.setText(
+                "Result\n" + Integer.toString(result)
+        );
     }
 
     @FXML
     private void multiplyButtonOnMouseClicked(ActionEvent event) {
+        int xVal = Integer.parseInt(xTextField.getText());
+        int yVal = Integer.parseInt(yTextField.getText());
+        int result = xVal * yVal;
+        resultLabel.setText(
+                "Result\n" + Integer.toString(result)
+        );
     }
 
     @FXML
     private void subtractButtonOnMouseClicked(ActionEvent event) {
+        resultLabel.setText(
+                "Result\n" + Integer.toString(
+                    Integer.parseInt(xTextField.getText()) - Integer.parseInt(yTextField.getText())
+                )
+        );
     }
 
     @FXML
     private void divisionButtonOnMouseClicked(MouseEvent event) {
+        resultLabel.setText(
+            "Result\n" + Double.toString(
+                    Double.parseDouble(xTextField.getText()) / Double.parseDouble(yTextField.getText()))
+            );
     }
     
 }

@@ -4,23 +4,37 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="287.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.ArithmeticOperationController">
+<AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="376.0" style="-fx-background-color: #9AC5F4;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.ArithmeticOperationController">
    <children>
-      <Label layoutX="70.0" layoutY="39.0" prefHeight="17.0" prefWidth="104.0" text="Enter X value" />
-      <Label layoutX="70.0" layoutY="110.0" prefHeight="17.0" prefWidth="104.0" text="Enter Y value" />
-      <Button layoutX="70.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#addButtonOnMouseClicked" text="Add" />
-      <Button layoutX="165.0" layoutY="188.0" mnemonicParsing="false" onAction="#multiplyButtonOnMouseClicked" text="Multiply" />
-      <Button layoutX="70.0" layoutY="231.0" mnemonicParsing="false" onAction="#subtractButtonOnMouseClicked" text="Subtract" />
-      <Button layoutX="166.0" layoutY="231.0" mnemonicParsing="false" onMouseClicked="#divisionButtonOnMouseClicked" text="Division" />
-      <TextField layoutX="70.0" layoutY="68.0" fx:id="xTextField" />
-      <TextField fx:id="yTextField" layoutX="70.0" layoutY="136.0" />
-      <Label fx:id="resultLabel" alignment="CENTER" blendMode="DARKEN" layoutX="99.0" layoutY="294.0" prefHeight="27.0" prefWidth="89.0" style="-fx-background-color: #1098ad;" text="Result" textFill="#eeeded">
+      <Button layoutX="59.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#addButtonOnMouseClicked" style="-fx-background-color: #FFEEBB;" text="Add" />
+      <Button layoutX="174.0" layoutY="314.0" mnemonicParsing="false" onAction="#multiplyButtonOnMouseClicked" style="-fx-background-color: #A7ECEE;" text="Multiply" />
+      <Button layoutX="105.0" layoutY="314.0" mnemonicParsing="false" onAction="#subtractButtonOnMouseClicked" style="-fx-background-color: #99DBF5;" text="Subtract" />
+      <Button layoutX="242.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#divisionButtonOnMouseClicked" text="Division" />
+      <TextField alignment="CENTER" layoutX="64.0" layoutY="134.0" prefHeight="39.0" prefWidth="239.0" promptText="Enter X Value" fx:id="xTextField">
          <font>
             <Font size="18.0" />
          </font>
+      </TextField>
+      <TextField fx:id="yTextField" alignment="CENTER" layoutX="64.0" layoutY="210.0" prefHeight="39.0" prefWidth="239.0" promptText="Enter Y Value">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="48.0" layoutY="45.0" text="Basic Calculator" textFill="WHITE">
+         <font>
+            <Font size="39.0" />
+         </font>
       </Label>
+      <Line endX="140.0" layoutX="160.0" layoutY="293.0" startX="-99.0" />
+      <Label fx:id="resultLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="132.0" layoutY="371.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Line endX="-47.0" endY="-36.0" layoutX="107.0" layoutY="395.0" startX="195.0" startY="-36.0" />
    </children>
 </AnchorPane>
