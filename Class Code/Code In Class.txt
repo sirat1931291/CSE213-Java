@@ -1,3 +1,6 @@
 1. Who are "YOU"?
 Ans : "YOU" is the method who is calling the class instances.
 
+2. Fileld is also known as member data.
+3. Method is also known as member function.
+4. When we need to initilize a scene when startup, we need to write code to the initialize() method.
