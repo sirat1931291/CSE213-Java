@@ -4,3 +4,28 @@ Ans : "YOU" is the method who is calling the class instances.
 2. Fileld is also known as member data.
 3. Method is also known as member function.
 4. When we need to initilize a scene when startup, we need to write code to the initialize() method.
+
+
+
+
+
+
+New Code:
+------------------------
+Controller File
+-------------------
+@FXML private Button addButton;
+FXMl File
+------------------
+<Button fx:id="addButton" layoutX="59.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#addButtonOnMouseClicked" onMouseEntered="#addButtonOnMouseEntered" onMouseExited="#addButtonOnMouseExited" style="-fx-background-color: #FFEEBB;" text="Add" />
+
+for hovering and exited:
+ @FXML
+    private void addButtonOnMouseExited(MouseEvent event) {
+        addButton.setText("Add");
+    }
+
+    @FXML
+    private void addButtonOnMouseEntered(MouseEvent event) {
+        addButton.setText("Don't Hover!");
+    }
