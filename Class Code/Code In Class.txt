@@ -29,3 +29,13 @@ for hovering and exited:
     private void addButtonOnMouseEntered(MouseEvent event) {
         addButton.setText("Don't Hover!");
     }
+
+------------------------------------------------------------------------------------------------
+Matrix Operation
+
+public Class Matrix{
+ int[][] vals;
+
+}
+vals.length -->represents the rows
+vals[i].length --> represents the columns
