@@ -14,6 +14,7 @@ Max Functionality = 8
 
 ------------------------
 New Code (4 Oct, 2023):
+-----------------------
 
 Controller File
 -------------------
@@ -45,3 +46,23 @@ public Class Matrix{
 }
 vals.length -->represents the rows
 vals[i].length --> represents the columns
+
+
+-------------
+09-10-2023
+-------------
+
+Q. What is Scope?
+Ans : Block of teritory. Usually it is defined by curly braces.
+
+Use of bare-block = Using the same name variable in the same block in general.
+
+Q. Why the fields are private and the methods are public in general?
+Ans: Unnecessary and Unauthorised access of data(fields).
+
+Q. What is package scope?
+Ans : 
+
+Q. What is package class?
+Ans: 
+
