@@ -66,3 +66,20 @@ Ans :
 Q. What is package class?
 Ans: 
 
+--------------------------------------------------------------
+-----------
+11-10-2023
+-----------
+
+Q. Generic Class
+Ans : 
+Q. Inheritance
+Ans : 
+Q.Protected Scope
+Ans : If a class potentially extended then it should make protected.
+
+Q. How to use inherited private fields/methods?
+Ans : By using super() keyword.
+
+Car is a specific type of engine. 😂
+Engine is a specific type of car. 😂
