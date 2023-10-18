@@ -83,3 +83,12 @@ Ans : By using super() keyword.
 
 Car is a specific type of engine. 😂
 Engine is a specific type of car. 😂
+
+
+--------------------------------------------------------------------
+18-oct-2023
+-----------
+
+Inheritance analysis in depth
+-----------------------------
+
