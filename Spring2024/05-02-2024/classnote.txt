@@ -1,0 +1,4 @@
+Array
+-----
+-> Same type of data
+-> Must be stored in consecutively
