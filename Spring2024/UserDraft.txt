@@ -1,4 +1,5 @@
 System Administrator:
+---------------------
 
 1. User Profile
 Manage personal details and settings.
@@ -18,6 +19,7 @@ Manage and respond to system-related issues or requests.
 View and manage system alerts, updates, and notifications.
 
 Factory Manager:
+----------------
 
 1. User Profile
 Manage personal details and settings.
@@ -38,6 +40,7 @@ Access market trends, competitor analysis, and customer feedback.
 
 
 Financial Officer:
+------------------
 
 1. User Profile
 Manage personal details and settings.
@@ -57,6 +60,7 @@ Oversee company assets, depreciation, and valuation.
 Create financial forecasts and scenario analysis.
 
 Inventory Inspector:
+--------------------
 
 1. User Profile
 Manage personal details and settings.
@@ -76,6 +80,7 @@ Receive notifications for low stock, expiring items, and other alerts.
 Generate and access detailed inventory reports and insights, Quality Control 
 
 HR Director:
+------------
 
 1. User Profile
 Manage personal details and settings.
@@ -95,6 +100,7 @@ Manage and track employee leaves and absences.
 Ensure HR policies and practices comply with legal and regulatory requirements.
 
 Sales Executive:
+----------------
 
 1. User Profile
 Manage personal details and settings.
@@ -114,6 +120,7 @@ Manage and track advertising efforts and ROI.
 Generate and analyze sales forecasts and market potentials.
 
 Technician:
+----------
 
 1. Equipment Troubleshooting
 Diagnose and troubleshoot issues with machinery and equipment, and initiate necessary repairs.
@@ -133,6 +140,7 @@ Coordinate with Inventory Management to ensure timely replenishment of technical
 Maintain and update technical documentation, manuals, and diagrams for equipment and processes.
 
 Worker:
+-------
 
 1. User Profile
 Manage personal details and settings.
