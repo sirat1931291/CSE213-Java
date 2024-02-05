@@ -1,0 +1,25 @@
+git config user.name
+git cnofig user.email
+
+
+
+
+git init  //create a repository
+
+add .gitignore   //For NetBeans === build/, dist/, nbproject/private
+
+commit       //give a meaningful commit message
+
+remote add origin url
+
+//Give some changes/updates
+
+git push
+
+//If any conflict
+
+pull
+
+Merge
+
+push    //Mergrd version
