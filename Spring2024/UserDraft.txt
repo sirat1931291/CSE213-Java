@@ -1,0 +1,152 @@
+System Administrator:
+
+1. User Profile
+Manage personal details and settings.
+2. User Management
+Manage user accounts (CRUD operations).  // CRUD -> Create, Read, Update, Delete
+3. Financial Overview
+Access financial reports and key metrics.
+4. Inventory Overview
+View summary and details of inventory status.
+5. Access Logs
+Monitor user activity and system access logs for security.
+6. System Health
+Monitor the health and performance of the system infrastructure.
+7. Support Tickets
+Manage and respond to system-related issues or requests.
+8. System Notifications
+View and manage system alerts, updates, and notifications.
+
+Factory Manager:
+
+1. User Profile
+Manage personal details and settings.
+2. User Overview
+View and manage user accounts with limited CRUD operations for security.
+3. Inventory Management
+Oversee inventory levels, orders, and supply chain issues.
+4. Financial Reports
+Access comprehensive financial reports and key financial indicators.
+5. Maintenance Schedule
+View and manage the schedules.
+6. Risk Management
+Monitor potential risks and mitigation strategies.
+7. Employee Directory
+View and manage employee information and records.
+8. Market Insights
+Access market trends, competitor analysis, and customer feedback.
+
+
+Financial Officer:
+
+1. User Profile
+Manage personal details and settings.
+2. Financial Reporting
+Access and generate financial reports and statements.
+3. Budget Management
+Plan, allocate, and monitor budget across departments.
+4. Expense Tracking
+Track and manage expenses, invoices, and payments.
+5. Revenue Analysis
+Analyze revenue streams and profitability metrics.
+6. Tax Management
+Manage tax filings, documents, and compliance.
+7. Asset Management
+Oversee company assets, depreciation, and valuation.
+8. Financial Forecasting
+Create financial forecasts and scenario analysis.
+
+Inventory Inspector:
+
+1. User Profile
+Manage personal details and settings.
+2. Inventory Monitoring
+Track stock levels, turnover rates, and reorder points, Raw Material, Finished Goods
+3. Supplier Management
+Manage supplier information, orders, and performance.
+4. Purchase Orders
+Create, track, and manage purchase orders, Stockout and Surplus
+5. Warehouse Management
+Oversee warehouse operations, including storage and logistics.
+6. Inventory Analysis
+Analyze inventory data for trends and optimization opportunities.
+7. Stock Alerts
+Receive notifications for low stock, expiring items, and other alerts.
+8. Inventory Reports
+Generate and access detailed inventory reports and insights, Quality Control 
+
+HR Director:
+
+1. User Profile
+Manage personal details and settings.
+2. Employee Directory
+View and manage employee information and records.
+3. Recruitment & Onboarding
+Manage the recruitment process and onboarding of new hires.
+4. Performance Management
+Track and evaluate employee performance reviews.
+5. Payroll & Benefits
+Oversee payroll processing and benefits administration.
+6. Training & Development
+Manage employee training programs and career development plans.
+7. Leave Management
+Manage and track employee leaves and absences.
+8. HR Compliance
+Ensure HR policies and practices comply with legal and regulatory requirements.
+
+Sales Executive:
+
+1. User Profile
+Manage personal details and settings.
+2. Sales Performance
+Track sales metrics, goals, and performance indicators.
+3. Customer Management
+Manage customer information, interactions, and CRM data.
+4. Marketing Campaigns
+Plan, execute, and analyze marketing campaigns.
+5. Market Research
+Access market research, trends, and competitor analysis.
+6. Product Management
+Oversee product listings, launches, and lifecycle.
+7. Advertisement Tracking
+Manage and track advertising efforts and ROI.
+8. Sales Forecasting
+Generate and analyze sales forecasts and market potentials.
+
+Technician:
+
+1. Equipment Troubleshooting
+Diagnose and troubleshoot issues with machinery and equipment, and initiate necessary repairs.
+2. Maintenance Logs
+Maintain detailed logs of equipment maintenance, repairs, and replacement schedules.
+3. Calibration Management
+Calibrate and monitor the calibration status of equipment to ensure accurate and reliable operations.
+4. Emergency Response
+Respond to and manage emergency situations, ensuring the safety of personnel and equipment.
+5. Energy Management
+Monitor and optimize energy consumption within the factory, implementing strategies for efficiency.
+6. Technical Training
+Participate in and facilitate technical training programs for factory personnel.
+7. Inventory Replenishment
+Coordinate with Inventory Management to ensure timely replenishment of technical supplies and spare parts.
+8. Technical Documentation
+Maintain and update technical documentation, manuals, and diagrams for equipment and processes.
+
+Worker:
+
+1. User Profile
+Manage personal details and settings.
+2. Salary Details
+Access salary slips, tax deductions, and payment history.
+3. Notice Board
+View company notices, announcements, and updates.
+4. Attendance Record
+Check attendance, clock-in/clock-out times, and leave balance.
+5. Leave Application
+Apply for leaves, view status, and manage leave requests.
+6. Issue Reporting
+Report workplace issues, hazards, or provide feedback.
+7. Performance Reviews
+View performance feedback from managers and peers.
+8. Inventory Usage
+Report and track usage of raw materials and inventory items. 
