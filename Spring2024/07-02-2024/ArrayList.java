@@ -45,7 +45,7 @@ public class MyApplication00 extends Application {
         for (int i = 0; i < listA.size(); i++){
             Customer c = listA.get(i);
             
-            if (c.Age < 30 && c.Gender.equals("F") {
+            if (c.getGender().equals("F")) {
                 listB.add(c);
             }
         }
