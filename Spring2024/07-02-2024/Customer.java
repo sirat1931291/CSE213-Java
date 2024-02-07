@@ -9,9 +9,9 @@ package main;
  * @author cis101
  */
 public class Customer {
-    public String Name;
-    public String Gender;
-    public int Age;
+    private String Name;
+    private String Gender;
+    private int Age;
 
     public Customer() {
     }
@@ -21,6 +21,32 @@ public class Customer {
         this.Gender = Gender;
         this.Age = Age;
     }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String Name) {
+        this.Name = Name;
+    }
+
+    public String getGender() {
+        return Gender;
+    }
+
+    public void setGender(String Gender) {
+        this.Gender = Gender;
+    }
+
+    public int getAge() {
+        return Age;
+    }
+
+    public void setAge(int Age) {
+        this.Age = Age;
+    }
+    
+    
 
     @Override
     public String toString() {
