@@ -16,7 +16,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-
+import java.util.ArrayList;
+import java.util.List;
+import javafx.scene.control.ListView;
 /**
  *
  * @author cis101
@@ -48,6 +50,8 @@ public class MyFXMLDocumentController implements Initializable {
     @FXML
     private Button add_product_button;
     
+    private List<?> productList;
+    
     
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
@@ -56,7 +60,14 @@ public class MyFXMLDocumentController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        cb_material.getItems().addAll("Wood", "Metal", "Cloth");
+        cb_quantity.getItems().addAll(1, 2, 3);
+        
+        productList = new ArrayList<>();
     }    
+
+    @FXML
+    private void addPrtoductHandler(ActionEvent event) {
+    }
     
 }
