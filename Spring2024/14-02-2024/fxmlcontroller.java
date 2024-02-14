@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXML2.java to edit this template
- */
 package mainpkg;
 
 import java.net.URL;
@@ -19,10 +15,7 @@ import javafx.scene.control.TextField;
 import java.util.ArrayList;
 import java.util.List;
 import javafx.scene.control.ListView;
-/**
- *
- * @author cis101
- */
+
 public class MyFXMLDocumentController implements Initializable {
     
     @FXML
@@ -40,7 +33,7 @@ public class MyFXMLDocumentController implements Initializable {
     @FXML
     private TextField tf_product_field;
     @FXML
-    private TextField tx_product_id;
+    private TextField tf_product_id;
     @FXML
     private ComboBox<?> cb_material;
     @FXML
@@ -50,7 +43,7 @@ public class MyFXMLDocumentController implements Initializable {
     @FXML
     private Button add_product_button;
     
-    private List<?> productList;
+    private List<Product> productList;
     
     
     private void handleButtonAction(ActionEvent event) {
@@ -68,6 +61,10 @@ public class MyFXMLDocumentController implements Initializable {
 
     @FXML
     private void addPrtoductHandler(ActionEvent event) {
+        String productName = this.tf_product_field.getText();
+        String productID = this.tf_product_id.getText();
+        String material = this.cb_material.getValue();
+        int quantity = this.cb_quantity.getItem();
     }
     
 }
