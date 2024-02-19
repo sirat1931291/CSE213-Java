@@ -56,7 +56,8 @@ public class FXMLDocumentController implements Initializable {
 }
 
 
-
+-------------------------------------------------------------------------------------------------------------------
+//Additional Feature for table view also for mid question
 String productName = productName.getText().trim();
 String productId = productId.getText().trim();
 product p = new Product(productName, productId);
@@ -66,7 +67,8 @@ productList.add(p);
 
 
 
-Mid Question Answer no - 5
+Mid Question Answer no - 5(a)
+---------------------------------
 if (productName == null || productName.isEmpty()) {
     label.error.setText("Product name cannt be empty.");
     return;
@@ -77,4 +79,14 @@ else if (productId == null || productId.isEmpty()) {
 }
 else if (quantity == 0) {
     label.error.setText("Quantity cannt be empty.");
+}
+
+Mid Question Answer no - 5(b)
+---------------------------------
+//Checking duplicate
+for (Product p: productList) {
+    if (p.getProductId().equals(productId)) {
+        label_error.setText("ID already exists");
+        return;
+    }
 }
