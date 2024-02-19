@@ -54,3 +54,27 @@ public class FXMLDocumentController implements Initializable {
         productList.add(p);
     }
 }
+
+
+
+String productName = productName.getText().trim();
+String productId = productId.getText().trim();
+product p = new Product(productName, productId);
+LocalDate deliveryDate = deliveryDate.getValue();
+
+productList.add(p);
+
+
+
+Mid Question Answer no - 5
+if (productName == null || productName.isEmpty()) {
+    label.error.setText("Product name cannt be empty.");
+    return;
+}
+
+else if (productId == null || productId.isEmpty()) {
+    label.error.setText("Product ID cannt be empty.");
+}
+else if (quantity == 0) {
+    label.error.setText("Quantity cannt be empty.");
+}
