@@ -90,3 +90,9 @@ for (Product p: productList) {
         return;
     }
 }
+Mid Question Answer no - 5(c)
+---------------------------------
+//Delivery date check
+if (deliveryDate.isBefore(LocalDate.now())){
+    label_error.setText("Delivery date cannt be in the past");
+}
