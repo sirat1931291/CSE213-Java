@@ -11,6 +11,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -29,6 +30,8 @@ public class FXMLDocumentController implements Initializable {
     private TableColumn<Product, String> cl_productName;
     @FXML
     private TableColumn<Product, String> cl_productID;
+    @FXML
+    private Button addProductButton;
     
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
@@ -43,5 +46,11 @@ public class FXMLDocumentController implements Initializable {
         cl_productName.setCellValueFactory(new PropertyValueFactory("productName"));
         cl_productID.setCellValueFactory(new PropertyValueFactory("productId"));
         productList.add(new Product("Pen", "1"));
+    }
+
+    @FXML
+    private void onClicked(ActionEvent event) {
+        Product p = new Product("Book", "2");
+        productList.add(p);
     }
 }
