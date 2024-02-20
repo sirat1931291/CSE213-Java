@@ -10,10 +10,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="552.0" prefWidth="647.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="552.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXMLDocumentController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <TableView fx:id="product_table" layoutX="26.0" layoutY="82.0" prefHeight="488.0" prefWidth="302.0">
+      <TableView fx:id="product_table" layoutX="26.0" layoutY="70.0" prefHeight="488.0" prefWidth="302.0">
         <columns>
           <TableColumn fx:id="cl_product_name" prefWidth="88.0" text="Product Name" />
           <TableColumn fx:id="cl_product_id" prefWidth="71.0" text="Product ID" />
@@ -36,7 +36,7 @@
       <ComboBox fx:id="cb_material" layoutX="465.0" layoutY="170.0" prefWidth="150.0" />
       <ComboBox fx:id="cb_quantity" layoutX="465.0" layoutY="214.0" prefWidth="150.0" />
       <DatePicker fx:id="dp_delivery_date" layoutX="453.0" layoutY="263.0" />
-      <Label fx:id="error_label" layoutX="357.0" layoutY="374.0" prefHeight="196.0" prefWidth="273.0" text="Label" />
+      <Label fx:id="error_label" layoutX="357.0" layoutY="374.0" prefHeight="196.0" prefWidth="273.0" />
       <Button fx:id="button_add_product" layoutX="468.0" layoutY="314.0" mnemonicParsing="false" onAction="#on_clicked" text="Add Product" />
     </children>
 </AnchorPane>
