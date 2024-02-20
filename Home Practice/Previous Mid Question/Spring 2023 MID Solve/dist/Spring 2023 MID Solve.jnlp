@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Spring 2023 MID Solve.jnlp">
+  <information>
+    <title>Spring 2023 MID Solve</title>
+    <vendor>habib</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="mainpkg.Items"  name="Spring 2023 MID Solve" />
+  <update check="always"/>
+</jnlp>
