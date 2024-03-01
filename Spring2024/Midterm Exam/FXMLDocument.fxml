@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="779.0" prefWidth="913.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="51.0" layoutY="77.0" text="Processor Name" />
+      <Label layoutX="53.0" layoutY="129.0" text="Series" />
+      <Label layoutX="51.0" layoutY="173.0" text="Brand" />
+      <Label layoutX="433.0" layoutY="65.0" text="Number of cores" />
+      <Label layoutX="433.0" layoutY="117.0" text="Price" />
+      <Label layoutX="435.0" layoutY="165.0" text="Rating %" />
+      <TextField fx:id="tf_processor_name" layoutX="161.0" layoutY="73.0" />
+      <TextField fx:id="tf_price" layoutX="552.0" layoutY="113.0" />
+      <TextField fx:id="tf_rating" layoutX="552.0" layoutY="161.0" />
+      <ComboBox fx:id="cb_series" layoutX="161.0" layoutY="125.0" onAction="#updateBrandFromSeries" prefWidth="150.0" />
+      <ComboBox fx:id="cb_no_of_cores" layoutX="552.0" layoutY="61.0" prefWidth="150.0" />
+      <Button layoutX="743.0" layoutY="61.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="130.0" prefWidth="129.0" text="Add Product" />
+      <TableView fx:id="table_view" layoutX="51.0" layoutY="266.0" prefHeight="344.0" prefWidth="834.0">
+        <columns>
+          <TableColumn fx:id="tc_processor_name" prefWidth="192.0" text="Processor Name" />
+          <TableColumn fx:id="tc_brand" prefWidth="90.0" text="Brand" />
+            <TableColumn fx:id="tc_series" text="Series" />
+            <TableColumn fx:id="tc_number_of_cores" prefWidth="106.0" text="Number of Cores" />
+            <TableColumn fx:id="tc_price" prefWidth="104.0" text="Price" />
+            <TableColumn fx:id="tc_rating" prefWidth="125.0" text="Rating" />
+            <TableColumn fx:id="tc_price_per_core" prefWidth="130.0" text="Price per Core" />
+        </columns>
+      </TableView>
+      <Label fx:id="lbl_brand_label" layoutX="161.0" layoutY="178.0" />
+      <Label fx:id="lowest_per_core_label" layoutX="53.0" layoutY="630.0" prefHeight="17.0" prefWidth="315.0" />
+      <Label layoutX="464.0" layoutY="630.0" text="Minimum rating" />
+      <Label fx:id="highest_per_core_label" layoutX="55.0" layoutY="685.0" />
+      <Label layoutX="464.0" layoutY="677.0" text="Maximum rating" />
+      <TextField fx:id="tf_min_rating" layoutX="583.0" layoutY="635.0" />
+      <TextField fx:id="tf_max_rating" layoutX="583.0" layoutY="673.0" />
+      <Button layoutX="794.0" layoutY="635.0" mnemonicParsing="false" onAction="#filter_product" text="Filter" />
+      <Button layoutX="794.0" layoutY="681.0" mnemonicParsing="false" onAction="#reset_filter_product" text="Reset Filter" />
+    </children>
+</AnchorPane>
