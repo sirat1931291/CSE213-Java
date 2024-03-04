@@ -38,19 +38,22 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void loadFile(ActionEvent event) {
+        System.out.println("Hello");
         try{
             String data = ""; 
             File file = new File(filename);
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line = reader.readLine();
+            
             while (line != null && line.isEmpty()) {
                 data += line + '\n';
-                
+//                line = reader.readLine();
+                System.out.println(data);
             }
             textArea.setText(data);
         }
         catch (IOException e) {
-            textArea.setText("Shutiye lal korar aage thik kor");
+            textArea.setText("Wrong");
         }
     }
 }
