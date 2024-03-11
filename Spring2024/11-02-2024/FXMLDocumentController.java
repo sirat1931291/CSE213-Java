@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import java.io.BufferedWriter;
+import java.io.EOFException;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -178,7 +179,7 @@ public class FXMLDocumentController implements Initializable {
         try {
             ois = new ObjectInputStream(new FileInputStream(binfilename));
             userList.clear();
-            while (ois.available() > 0) {
+            while (true) {
                 User u = (User)ois.readObject();
                 userList.add(u);
             }
@@ -201,6 +202,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void saveBinaryFile(ActionEvent event) throws IOException {
         ObjectOutputStream oos = null;
+        
         try {
             oos = new ObjectOutputStream(new FileOutputStream(binfilename));
             for (User u : userList) {
