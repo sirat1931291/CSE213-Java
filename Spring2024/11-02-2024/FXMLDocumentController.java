@@ -11,9 +11,13 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.Scanner;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;
@@ -34,6 +38,7 @@ public class FXMLDocumentController implements Initializable {
     private Label lbl_saved_status;
     
     String filename = "C:\\Users\\cis101\\Desktop\\CSE213\\Class Code\\11-03-2024\\Test File.txt";
+    String binfilename = "C:\\Users\\cis101\\Desktop\\CSE213\\Class Code\\11-03-2024\\Bin Test File.txt";
     @FXML
     private Label label;
     @FXML
@@ -44,6 +49,10 @@ public class FXMLDocumentController implements Initializable {
     private TableColumn<User, String> tc_password;
     
     ObservableList<User> userList;
+    @FXML
+    private Button loadBinary;
+    @FXML
+    private Button saveBinary;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -161,6 +170,51 @@ public class FXMLDocumentController implements Initializable {
         }
         
         ta_textOutput.setText(data.toString());
+    }
+
+    @FXML
+    private void loadBinaryFile(ActionEvent event) throws IOException {
+        ObjectInputStream ois = null;
+        try {
+            ois = new ObjectInputStream(new FileInputStream(binfilename));
+            userList.clear();
+            while (ois.available() > 0) {
+                User u = (User)ois.readObject();
+                userList.add(u);
+            }
+            
+        } 
+        catch (IOException e) {
+            e.printStackTrace();
+            
+        }
+        catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        finally {
+            if (ois != null) {
+                ois.close();
+            }
+        }
+    }
+
+    @FXML
+    private void saveBinaryFile(ActionEvent event) throws IOException {
+        ObjectOutputStream oos = null;
+        try {
+            oos = new ObjectOutputStream(new FileOutputStream(binfilename));
+            for (User u : userList) {
+                oos.writeObject(u);
+            }
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally {
+            if (oos != null) {
+                oos.close();
+            }
+        }
     }
     
 }
