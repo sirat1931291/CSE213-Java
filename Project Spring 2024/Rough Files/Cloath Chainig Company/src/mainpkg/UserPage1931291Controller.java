@@ -11,10 +11,12 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.Scanner;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -46,8 +48,11 @@ public class UserPage1931291Controller implements Initializable {
     private TextField tf_sys_admin_acc_type;
     @FXML
     private Label lbl_status_save_file;
+    @FXML
+    private PieChart system_admin_pie_chart;
     
     ObservableList user_list;
+    
     
     
 
@@ -110,6 +115,11 @@ public class UserPage1931291Controller implements Initializable {
         catch (IOException e) {
             lbl_status_save_file.setText("Something went wrong to write to file!!");
         }
+    }
+
+    @FXML
+    private void showPieChartOnClick(ActionEvent event) {
+        ObservableList<PieChart.Data> chartData = FXCollections.observableArrayList();
     }
     
 }

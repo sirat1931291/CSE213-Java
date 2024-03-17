@@ -1,5 +1,2 @@
-2320608,Nahian Noureen,Admin
-2320608,Nahian Noureen,Admin
-1930654,Md. Anik Hasan Rana,HR Admin
-1930654,Md. Anik Hasan Rana,HR Admin
-1930655,Md. Anik Hasan,Worker
+2320608,Nahian Noureen,Administrator
+1931291,Habibullah Sirat,System Administrator
