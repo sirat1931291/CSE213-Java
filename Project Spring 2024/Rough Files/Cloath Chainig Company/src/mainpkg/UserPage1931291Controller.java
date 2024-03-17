@@ -67,6 +67,7 @@ public class UserPage1931291Controller implements Initializable {
         try {
             Scanner s = new Scanner(new FileReader(filename));
             s.useDelimiter(",|\n");
+            user_list.clear();
             while (s.hasNext()) {
                 String id = s.next();
                 String name = s.next();
