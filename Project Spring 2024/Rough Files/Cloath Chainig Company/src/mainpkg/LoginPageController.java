@@ -44,7 +44,7 @@ public class LoginPageController implements Initializable {
         String id = tf_user_login_id.getText().trim();
         String password = tf_user_login_password.getText().trim();
         
-        String filename = "D:\\Coding\\CSE 213\\Github\\CSE213-Java\\Project Spring 2024\\Rough Files\\Cloath Chainig Company\\User Login List.txt";
+        String filename = "D:\\Github\\CSE213-Java\\Project Spring 2024\\Rough Files\\Cloath Chainig Company\\User Login List.txt";
         try {
             Scanner s = new Scanner(new FileReader(filename));
             while (s.hasNext()) {

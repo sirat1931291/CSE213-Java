@@ -68,7 +68,7 @@ public class UserPage1931291Controller implements Initializable {
     @FXML
     private void show_user_onClick(ActionEvent event) {
         
-        String filename = "D:\\Coding\\CSE 213\\Github\\CSE213-Java\\Project Spring 2024\\Rough Files\\Cloath Chainig Company\\User List.txt";
+        String filename = "D:\\Github\\CSE213-Java\\Project Spring 2024\\Rough Files\\Cloath Chainig Company\\User List.txt";
         try {
             Scanner s = new Scanner(new FileReader(filename));
             s.useDelimiter(",|\n");
@@ -98,8 +98,8 @@ public class UserPage1931291Controller implements Initializable {
             return;
         }
         
-        String user_login_list = "D:\\Coding\\CSE 213\\Github\\CSE213-Java\\Project Spring 2024\\Rough Files\\Cloath Chainig Company\\User Login List.txt";
-        String user_list = "D:\\Coding\\CSE 213\\Github\\CSE213-Java\\Project Spring 2024\\Rough Files\\Cloath Chainig Company\\User List.txt";
+        String user_login_list = "User Login List.txt";
+        String user_list = "User List.txt";
         try (BufferedWriter rt = new BufferedWriter(new FileWriter(user_login_list, true))) {
             rt.write(id + " " + pass + '\n');
             lbl_status_save_file.setText("File saved successfully.");
