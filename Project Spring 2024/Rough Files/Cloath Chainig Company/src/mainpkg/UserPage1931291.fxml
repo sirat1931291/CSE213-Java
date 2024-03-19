@@ -44,5 +44,6 @@
          </font>
       </Label>
       <Button alignment="CENTER" layoutX="34.0" layoutY="305.0" mnemonicParsing="false" onAction="#showPieChartOnClick" prefHeight="48.0" prefWidth="120.0" text="Show User Pie Chart" textAlignment="CENTER" wrapText="true" />
+      <Button alignment="CENTER" layoutX="187.0" layoutY="305.0" mnemonicParsing="false" onAction="#showBarChartOnClick" prefHeight="48.0" prefWidth="120.0" text="Show User Bar Chart" textAlignment="CENTER" wrapText="true" />
    </children>
 </AnchorPane>

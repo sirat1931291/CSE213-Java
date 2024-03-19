@@ -20,7 +20,7 @@ import javafx.scene.chart.PieChart;
  *
  * @author habib
  */
-public class SystemAdminChartSceneController implements Initializable {
+public class SystemAdminPieChartSceneController implements Initializable {
 
     @FXML
     private PieChart sys_admin_user_pie_chart;
@@ -48,5 +48,6 @@ public class SystemAdminChartSceneController implements Initializable {
         }
     
     sys_admin_user_pie_chart.setData(pieChartData);
+    sys_admin_user_pie_chart.setTitle("Total User");
     }
 }
