@@ -131,7 +131,7 @@ public class UserPage1931291Controller implements Initializable {
 
     @FXML
     private void showBarChartOnClick(ActionEvent event) throws IOException {
-        Parent p = FXMLLoader.load(getClass().getResource("SystemAdminPieChartScene.fxml"));
+        Parent p = FXMLLoader.load(getClass().getResource("SystemAdminBarChartScene.fxml"));
         Scene s = new Scene(p);
         Stage stg = (Stage)((Node)event.getSource()).getScene().getWindow();
         stg.setScene(s);

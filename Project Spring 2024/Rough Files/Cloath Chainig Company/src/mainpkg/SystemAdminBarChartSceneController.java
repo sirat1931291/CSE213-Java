@@ -18,7 +18,7 @@ import javafx.scene.chart.BarChart;
 public class SystemAdminBarChartSceneController implements Initializable {
 
     @FXML
-    private BarChart<?, ?> sys_admin_user_bar_chart;
+    private BarChart<String, Double> sys_admin_user_bar_chart;
 
     /**
      * Initializes the controller class.
