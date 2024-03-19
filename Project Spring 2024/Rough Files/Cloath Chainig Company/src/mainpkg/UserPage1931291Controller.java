@@ -4,7 +4,9 @@
  */
 package mainpkg;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -15,13 +17,19 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Side;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.chart.PieChart;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -48,14 +56,9 @@ public class UserPage1931291Controller implements Initializable {
     private TextField tf_sys_admin_acc_type;
     @FXML
     private Label lbl_status_save_file;
-    @FXML
-    private PieChart system_admin_pie_chart;
     
     ObservableList user_list;
     
-    
-    
-
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -68,7 +71,7 @@ public class UserPage1931291Controller implements Initializable {
     @FXML
     private void show_user_onClick(ActionEvent event) {
         
-        String filename = "D:\\Github\\CSE213-Java\\Project Spring 2024\\Rough Files\\Cloath Chainig Company\\User List.txt";
+        String filename = "User List.txt";
         try {
             Scanner s = new Scanner(new FileReader(filename));
             s.useDelimiter(",|\n");
@@ -118,8 +121,12 @@ public class UserPage1931291Controller implements Initializable {
     }
 
     @FXML
-    private void showPieChartOnClick(ActionEvent event) {
-        ObservableList<PieChart.Data> chartData = FXCollections.observableArrayList();
+    private void showPieChartOnClick(ActionEvent event) throws IOException {
+        Parent p = FXMLLoader.load(getClass().getResource("SystemAdminChartScene.fxml"));
+        Scene s = new Scene(p);
+        Stage stg = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stg.setScene(s);
+        stg.show();
     }
     
 }
