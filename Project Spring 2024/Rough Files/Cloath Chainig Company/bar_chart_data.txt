@@ -1,0 +1,8 @@
+System Administrator,System Administrator,1
+Factory Manager,Factory Manager,6
+HR Admin,HR Admin,4
+Worker,Worker,15
+Delivery Man,Delivery Man,8
+Customer,Customer,20
+Manufacturer,Manufacturer,3
+Inventory Inspector,Inventory Inspector,5

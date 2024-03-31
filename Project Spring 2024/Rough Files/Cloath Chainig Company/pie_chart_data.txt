@@ -1,8 +1,8 @@
 System Administrator,1
-Administrator,1
+Factory Manager,6
 HR Admin,4
-HR Manager,3
-Factory Manager,2
-Manager,4
-Merchendiser,2
 Worker,15
+Delivery Man,8
+Customer,20
+Manufacturer,3
+Inventory Inspector,5

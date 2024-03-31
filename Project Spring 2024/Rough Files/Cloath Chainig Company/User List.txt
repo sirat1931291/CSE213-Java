@@ -1,12 +1,8 @@
-2320608,Nahian Noureen,Administrator
 1931291,Habibullah Sirat,System Administrator
 1931291,Habibullah Sirat,Factory Manager
-2320608,Nahian Noureen,HR
 1930654,MD. Anik Hasan Rana,HR Admin
 1930654,MD. Anik Hasan Rana,Worker
-1931233,MD. Nafiur Rahman Ashik,Worker
-1931233,MD. Nafiur Rahman Ashik,Executive Manager
-1931233,MD. Nafiur Rahman Ashik,Marketing Manager
-1931291,Habibullah Sirat,Senior Marchendiser
-2320608,Nahian Noureen,Manager
-
+2022067,Partha Ghosh,Delivery Man
+2022067,Partha Ghosh,Customer
+2021359,Sayeed Zaman Sifat,Manufacturer
+2021359,Sayeed Zaman Sifat,Inventory Inspector

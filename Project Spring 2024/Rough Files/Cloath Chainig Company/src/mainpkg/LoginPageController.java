@@ -69,7 +69,7 @@ public class LoginPageController implements Initializable {
                         break;
                     }
                     
-                    else if (id.equals("1930654")) {
+                    else if (id.equals("2022067")) {
                         Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
                         Scene s2 = new Scene(p2);
                         Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -78,7 +78,7 @@ public class LoginPageController implements Initializable {
                         break;
                     }
                     
-                    else if (id.equals("1930654")) {
+                    else if (id.equals("2022067")) {
                         Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
                         Scene s2 = new Scene(p2);
                         Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -87,7 +87,15 @@ public class LoginPageController implements Initializable {
                         break;
                     }
                     
-                    else if (id.equals("1930654")) {
+                    else if (id.equals("2021359")) {
+                        Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
+                        Scene s2 = new Scene(p2);
+                        Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
+                        stg2.setScene(s2);
+                        stg2.show();
+                        break;
+                    }
+                    else if (id.equals("2021359")) {
                         Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
                         Scene s2 = new Scene(p2);
                         Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
