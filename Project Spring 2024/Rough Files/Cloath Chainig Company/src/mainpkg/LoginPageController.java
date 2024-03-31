@@ -59,6 +59,34 @@ public class LoginPageController implements Initializable {
                         stg1.show();
                         break;
                     }
+                    
+                    else if (id.equals("1930654")) {
+                        Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
+                        Scene s2 = new Scene(p2);
+                        Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
+                        stg2.setScene(s2);
+                        stg2.show();
+                        break;
+                    }
+                    
+                    else if (id.equals("1930654")) {
+                        Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
+                        Scene s2 = new Scene(p2);
+                        Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
+                        stg2.setScene(s2);
+                        stg2.show();
+                        break;
+                    }
+                    
+                    else if (id.equals("1930654")) {
+                        Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
+                        Scene s2 = new Scene(p2);
+                        Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
+                        stg2.setScene(s2);
+                        stg2.show();
+                        break;
+                    }
+                    
                     else if (id.equals("1930654")) {
                         Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
                         Scene s2 = new Scene(p2);

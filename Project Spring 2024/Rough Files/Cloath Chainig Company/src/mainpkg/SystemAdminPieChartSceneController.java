@@ -11,9 +11,15 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.chart.PieChart;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -49,5 +55,14 @@ public class SystemAdminPieChartSceneController implements Initializable {
     
     sys_admin_user_pie_chart.setData(pieChartData);
     sys_admin_user_pie_chart.setTitle("Total User");
+    }
+
+    @FXML
+    private void backToHomePage(ActionEvent event) throws IOException {
+        Parent p1 = FXMLLoader.load(getClass().getResource("UserPage1931291.fxml"));
+        Scene s1 = new Scene(p1);
+        Stage stg1 = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stg1.setScene(s1);
+        stg1.show();
     }
 }

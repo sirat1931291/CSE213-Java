@@ -137,5 +137,14 @@ public class UserPage1931291Controller implements Initializable {
         stg.setScene(s);
         stg.show();
     }
+
+    @FXML
+    private void signOut(ActionEvent event) throws IOException {
+        Parent p1 = FXMLLoader.load(getClass().getResource("Login Page.fxml"));
+        Scene s1 = new Scene(p1);
+        Stage stg1 = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stg1.setScene(s1);
+        stg1.show();
+    }
     
 }

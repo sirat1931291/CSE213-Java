@@ -6,6 +6,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" prefHeight="916.0" prefWidth="1159.0" style="-fx-background-color: #E0F4FF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.UserPage1931291Controller">
@@ -15,26 +16,26 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TableView fx:id="sys_admin_user_table" layoutX="18.0" layoutY="528.0" prefHeight="374.0" prefWidth="1115.0" style="-fx-background-color: #B4D4FF;">
+      <TableView fx:id="sys_admin_user_table" layoutX="22.0" layoutY="498.0" prefHeight="374.0" prefWidth="1115.0" style="-fx-background-color: #B4D4FF;">
         <columns>
           <TableColumn fx:id="tc_user_id" prefWidth="176.0" text="User ID" />
           <TableColumn fx:id="tc_user_name" prefWidth="501.0" text="User Name" />
             <TableColumn fx:id="tc_user_type" prefWidth="419.0" text="User Type" />
         </columns>
       </TableView>
-      <Button layoutX="187.0" layoutY="262.0" mnemonicParsing="false" onAction="#show_user_onClick" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #83A2FF; -fx-text-fill: white;" text="Show User">
+      <Button layoutX="596.0" layoutY="294.0" mnemonicParsing="false" onAction="#show_user_onClick" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #83A2FF; -fx-text-fill: white;" text="Show User">
          <font>
             <Font size="14.0" />
          </font></Button>
-      <TextField fx:id="tf_sys_admin_id" layoutX="158.0" layoutY="115.0" />
-      <TextField fx:id="tf_sys_admin_name" layoutX="158.0" layoutY="153.0" />
-      <TextField fx:id="tf_sys_admin_password" layoutX="158.0" layoutY="191.0" />
-      <TextField fx:id="tf_sys_admin_acc_type" layoutX="158.0" layoutY="226.0" />
-      <Label layoutX="38.0" layoutY="119.0" text="Enter ID" />
-      <Label layoutX="38.0" layoutY="157.0" text="Enter Name" />
-      <Label layoutX="38.0" layoutY="195.0" text="Enter Password" />
-      <Label layoutX="38.0" layoutY="230.0" text="Enter Account Type" />
-      <Button layoutX="37.0" layoutY="262.0" mnemonicParsing="false" onAction="#addUserOnClick" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #83A2FF; -fx-text-fill: white;" text="Add User">
+      <TextField fx:id="tf_sys_admin_id" layoutX="567.0" layoutY="147.0" />
+      <TextField fx:id="tf_sys_admin_name" layoutX="567.0" layoutY="185.0" />
+      <TextField fx:id="tf_sys_admin_password" layoutX="567.0" layoutY="223.0" />
+      <TextField fx:id="tf_sys_admin_acc_type" layoutX="567.0" layoutY="258.0" />
+      <Label layoutX="447.0" layoutY="151.0" text="Enter ID" />
+      <Label layoutX="447.0" layoutY="189.0" text="Enter Name" />
+      <Label layoutX="447.0" layoutY="227.0" text="Enter Password" />
+      <Label layoutX="447.0" layoutY="262.0" text="Enter Account Type" />
+      <Button layoutX="446.0" layoutY="294.0" mnemonicParsing="false" onAction="#addUserOnClick" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #83A2FF; -fx-text-fill: white;" text="Add User">
          <font>
             <Font size="14.0" />
          </font></Button>
@@ -43,7 +44,12 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button alignment="CENTER" layoutX="34.0" layoutY="305.0" mnemonicParsing="false" onAction="#showPieChartOnClick" prefHeight="48.0" prefWidth="120.0" text="Show User Pie Chart" textAlignment="CENTER" wrapText="true" />
-      <Button alignment="CENTER" layoutX="187.0" layoutY="305.0" mnemonicParsing="false" onAction="#showBarChartOnClick" prefHeight="48.0" prefWidth="120.0" text="Show User Bar Chart" textAlignment="CENTER" wrapText="true" />
+      <Button alignment="CENTER" layoutX="443.0" layoutY="337.0" mnemonicParsing="false" onAction="#showPieChartOnClick" prefHeight="48.0" prefWidth="120.0" text="Show User Pie Chart" textAlignment="CENTER" wrapText="true" />
+      <Button alignment="CENTER" layoutX="596.0" layoutY="337.0" mnemonicParsing="false" onAction="#showBarChartOnClick" prefHeight="48.0" prefWidth="120.0" text="Show User Bar Chart" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="1000.0" layoutY="33.0" mnemonicParsing="false" onAction="#signOut" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: #7091F5; -fx-text-fill: white;" text="Sign Out">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Line endX="-26.0" endY="-110.0" layoutX="1014.0" layoutY="198.0" opacity="0.33" startX="-26.0" startY="-184.0" />
    </children>
 </AnchorPane>
