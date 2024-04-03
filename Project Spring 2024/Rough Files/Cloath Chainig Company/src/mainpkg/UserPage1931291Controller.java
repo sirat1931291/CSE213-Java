@@ -100,7 +100,7 @@ public class UserPage1931291Controller implements Initializable {
         String user_login_list = "User Login List.txt";
         String user_list = "User List.txt";
         try (BufferedWriter rt = new BufferedWriter(new FileWriter(user_login_list, true))) {
-            rt.write(id + " " + pass + '\n');
+            rt.write('\n' + id + "," + pass + ',' + type + ',' + '\n');
             lbl_status_save_file.setText("File saved successfully.");
         }
         catch (IOException e) {
@@ -108,7 +108,7 @@ public class UserPage1931291Controller implements Initializable {
         }
         
         try (BufferedWriter rt = new BufferedWriter(new FileWriter(user_list, true))) {
-            rt.write(id + "," + name + "," + type + '\n');
+            rt.write('\n' + id + "," + name + "," + type + '\n');
             lbl_status_save_file.setText("File saved successfully.");
         }
         catch (IOException e) {

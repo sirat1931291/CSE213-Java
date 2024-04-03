@@ -6,3 +6,4 @@
 2022067,Partha Ghosh,Customer
 2021359,Sayeed Zaman Sifat,Manufacturer
 2021359,Sayeed Zaman Sifat,Inventory Inspector
+2320608,Nahian Noureen,Admin
