@@ -36,17 +36,16 @@ public class LoginPageController implements Initializable {
     @FXML
     private ComboBox<String> userLoginComboBox;
     
-    String userid, pass;
+    String userid, pass,usertype;
     
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        ObservableList<String> options = FXCollections.observableArrayList("System Administrator", "Factory Manager", "Customer");
+        ObservableList<String> options = FXCollections.observableArrayList("System Administrator", "Factory Manager", "Customer", "Worker");
         userLoginComboBox.setItems(options);
     }
     
-
     @FXML
     private void signIn(ActionEvent event) throws IOException {
         String id = tf_user_login_id.getText().trim();
@@ -73,61 +72,44 @@ public class LoginPageController implements Initializable {
             while (s.hasNext()) {
                 userid = s.next();
                 pass = s.next();
-                String usertype = s.next();
-                if (id.equals(userid) && password.equals(pass) && user.equals(usertype)) {
-                    if (id.equals("1931291")) {
+                usertype = s.next();     
+
+                if (id.equals("1931291") && password.equals(pass) && user.equals(usertype)) {
                         Parent p1 = FXMLLoader.load(getClass().getResource("UserPage1931291.fxml"));
                         Scene s1 = new Scene(p1);
                         Stage stg1 = (Stage)((Node)event.getSource()).getScene().getWindow();
                         stg1.setScene(s1);
                         stg1.show();
                         break;
-                    }
-                    
-                    else if (id.equals("1930654")) {
-                        Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
-                        Scene s2 = new Scene(p2);
-                        Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
-                        stg2.setScene(s2);
-                        stg2.show();
-                        break;
-                    }
-                    
-                    else if (id.equals("2022067")) {
-                        Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
-                        Scene s2 = new Scene(p2);
-                        Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
-                        stg2.setScene(s2);
-                        stg2.show();
-                        break;
-                    }
-                    
-                    else if (id.equals("2022067")) {
-                        Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
-                        Scene s2 = new Scene(p2);
-                        Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
-                        stg2.setScene(s2);
-                        stg2.show();
-                        break;
-                    }
-                    
-                    else if (id.equals("2021359")) {
-                        Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
-                        Scene s2 = new Scene(p2);
-                        Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
-                        stg2.setScene(s2);
-                        stg2.show();
-                        break;
-                    }
-                    else if (id.equals("2021359")) {
-                        Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
-                        Scene s2 = new Scene(p2);
-                        Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
-                        stg2.setScene(s2);
-                        stg2.show();
-                        break;
-                    }
                 }
+                    
+                else if (id.equals("1931291") && password.equals(pass) && user.equals(usertype)) {
+                        Parent p1 = FXMLLoader.load(getClass().getResource("FactoryManagerPage.fxml"));
+                        Scene s1 = new Scene(p1);
+                        Stage stg1 = (Stage)((Node)event.getSource()).getScene().getWindow();
+                        stg1.setScene(s1);
+                        stg1.show();
+                        break;
+                }
+                
+                else if (id.equals("1930654") && password.equals(pass) && user.equals(usertype)) {
+                        Parent p1 = FXMLLoader.load(getClass().getResource("UserPage1931291.fxml"));
+                        Scene s1 = new Scene(p1);
+                        Stage stg1 = (Stage)((Node)event.getSource()).getScene().getWindow();
+                        stg1.setScene(s1);
+                        stg1.show();
+                        break;
+                }
+                
+                else if (id.equals("2022067") && password.equals(pass) && user.equals(usertype)) {
+                        Parent p1 = FXMLLoader.load(getClass().getResource("FactoryManagerPage.fxml"));
+                        Scene s1 = new Scene(p1);
+                        Stage stg1 = (Stage)((Node)event.getSource()).getScene().getWindow();
+                        stg1.setScene(s1);
+                        stg1.show();
+                        break;
+                }
+
                 System.out.println(userid + " " + pass);
             }
             s.close();
@@ -139,7 +121,71 @@ public class LoginPageController implements Initializable {
             System.out.println("Something went wrong.");
         }
     }
-
-    
-    
 }
+
+
+
+
+//                if (id.equals(userid) && password.equals(pass) && user.equals(usertype)) {
+//                    if (id.equals("1931291") && user.equals(usertype)) {
+//                        Parent p1 = FXMLLoader.load(getClass().getResource("UserPage1931291.fxml"));
+//                        Scene s1 = new Scene(p1);
+//                        Stage stg1 = (Stage)((Node)event.getSource()).getScene().getWindow();
+//                        stg1.setScene(s1);
+//                        stg1.show();
+//                        break;
+//                    }
+//                    
+//                    else if (id.equals("1931291") && user.equals(usertype)) {
+//                        Parent p1 = FXMLLoader.load(getClass().getResource("FactoryManagerPage.fxml"));
+//                        Scene s1 = new Scene(p1);
+//                        Stage stg1 = (Stage)((Node)event.getSource()).getScene().getWindow();
+//                        stg1.setScene(s1);
+//                        stg1.show();
+//                        break;
+//                    }
+//                    
+//                    else if (id.equals("1930654") && user.equals(usertype)) {
+//                        Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
+//                        Scene s2 = new Scene(p2);
+//                        Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
+//                        stg2.setScene(s2);
+//                        stg2.show();
+//                        break;
+//                    }
+//                    
+//                    else if (id.equals("2022067") && user.equals(usertype)) {
+//                        Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
+//                        Scene s2 = new Scene(p2);
+//                        Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
+//                        stg2.setScene(s2);
+//                        stg2.show();
+//                        break;
+//                    }
+//                    
+//                    else if (id.equals("2022067") && user.equals(usertype)) {
+//                        Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
+//                        Scene s2 = new Scene(p2);
+//                        Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
+//                        stg2.setScene(s2);
+//                        stg2.show();
+//                        break;
+//                    }
+//                    
+//                    else if (id.equals("2021359") && user.equals(usertype)) {
+//                        Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
+//                        Scene s2 = new Scene(p2);
+//                        Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
+//                        stg2.setScene(s2);
+//                        stg2.show();
+//                        break;
+//                    }
+//                    else if (id.equals("2021359") && user.equals(usertype)) {
+//                        Parent p2 = FXMLLoader.load(getClass().getResource("UserPage1930654.fxml"));
+//                        Scene s2 = new Scene(p2);
+//                        Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();
+//                        stg2.setScene(s2);
+//                        stg2.show();
+//                        break;
+//                    }
+//                }
