@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="793.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="83.0" layoutY="81.0" text="User Name" />
+      <Label layoutX="83.0" layoutY="112.0" text="Password" />
+      <Label layoutX="83.0" layoutY="145.0" text="Email" />
+      <TextField fx:id="tf_user_name" layoutX="161.0" layoutY="77.0" />
+      <TextField fx:id="tf_password" layoutX="161.0" layoutY="108.0" />
+      <TextField fx:id="tf_email" layoutX="161.0" layoutY="141.0" />
+      <Button layoutX="82.0" layoutY="173.0" mnemonicParsing="false" onAction="#addUserOnClick" text="Add User" />
+      <TableView fx:id="user_table" layoutX="33.0" layoutY="214.0" prefHeight="281.0" prefWidth="719.0">
+        <columns>
+          <TableColumn fx:id="tc_user_name" prefWidth="330.0" text="User Name" />
+          <TableColumn fx:id="tc_email" prefWidth="371.0" text="Email" />
+        </columns>
+      </TableView>
+      <Button layoutX="193.0" layoutY="173.0" mnemonicParsing="false" onAction="#saveBinOnClick" text="Write to Binary File" />
+      <Button layoutX="341.0" layoutY="173.0" mnemonicParsing="false" onAction="#readFromBinOnCLick" text="Read From Binary File" />
+    </children>
+</AnchorPane>
